@@ -114,8 +114,9 @@ const NFTListPage = () => {
         <div
           className="nft-grid"
           style={{
-            gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
             gap: "0rem",
+            marginLeft: "2rem",
           }}
         >
           {courses.length > 0
