@@ -112,7 +112,7 @@ const UserProfilePage = () => {
                   <div className="nft-details">
                     <h3 className="nft-title">{course.name}</h3>
                     <p className="nft-description">{course.description}</p>
-                    <p className="nft-price">Price: {course.price} EDU</p>
+                    <p className="nft-price">Price: {course.price} ETH</p>
                     <p className="nft-owner">Seller: {course.seller}</p>
                     {course.currentlyListed ? (
                       <p className="nft-status">Currently Listed</p>

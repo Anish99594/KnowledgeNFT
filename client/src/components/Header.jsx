@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import "../css/Header.css";
-import logo from "../assets/knowledgeNFTLogo.png";
+import logo from "../assets/knowledgeNFTLogo1.png";
 import {
   FaHome,
   FaUser,
@@ -19,11 +19,10 @@ const Header = () => {
   return (
     <header className="header">
       <div style={{ display: "flex", alignItems: "center" }}>
-        <img src={logo} alt="KnowledgeNFT Logo" className="logo" />{" "}
-        <h1 className="logo" style={{ marginBottom: "7px" }}>
-          KnowledgeNFT
-        </h1>
+        <img src={logo} alt="KnowledgeNFT Logo" className="logo-img" />
+        <h1 className="project-name">KnowledgeNFT</h1>
       </div>
+
       <div className="nav-links" style={{ alignItems: "center" }}>
         <Link to="/" className="nav-item">
           <FaHome /> Home

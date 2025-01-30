@@ -103,12 +103,21 @@ const NFTListPage = () => {
   return (
     <div className="nft-list-page">
       <div className="nft-list-container">
-        <h2 className="text-3xl font-bold text-center my-8">
+        <h2
+          className="text-3xl font-bold text-center my-8"
+          style={{ paddingTop: "1rem" }}
+        >
           Educational NFT Marketplace
         </h2>
         {isLoading && <p className="text-center">Loading courses...</p>}
         {error && <p className="text-center text-red-500">{error}</p>}
-        <div className="nft-grid">
+        <div
+          className="nft-grid"
+          style={{
+            gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+            gap: "0rem",
+          }}
+        >
           {courses.length > 0
             ? courses.map((course) => (
                 <NFTCard

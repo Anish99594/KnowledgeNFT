@@ -2,6 +2,12 @@ import React from "react";
 import "../css/nftCard.css";
 
 const NFTCard = ({ course, onBuy, isBuying }) => {
+  // Function to shorten the seller address
+  const shortenAddress = (address) => {
+    if (!address) return "";
+    return `${address.slice(0, 4)}...${address.slice(-4)}`;
+  };
+
   return (
     <div className="nft-card-unique">
       <img
@@ -13,8 +19,10 @@ const NFTCard = ({ course, onBuy, isBuying }) => {
       <div className="nft-card-unique-details">
         <h3 className="nft-card-unique-title">{course.name}</h3>
         <p className="nft-card-unique-description">{course.description}</p>
-        <p className="nft-card-unique-price">Price: {course.price} EDU</p>
-        <p className="nft-card-unique-owner">Seller: {course.seller}</p>
+        <p className="nft-card-unique-price">Price: {course.price} ETH</p>
+        <p className="nft-card-unique-owner">
+          Seller: {shortenAddress(course.seller)}
+        </p>
 
         {course.isBought ? (
           <p className="nft-card-unique-status">Sold</p>

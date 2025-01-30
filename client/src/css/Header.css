@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.project-name {
+  font-family: 'Montserrat', sans-serif; /* Binance-like font */
+  font-size: 0.8rem !important; /* Reduced further & forced */
+  color: #f39c12; /* Binance-like orange */
+  text-transform: uppercase; /* Similar styling */
+  letter-spacing: 1px; /* Adjust for better readability */
+  margin: 0; /* Remove default margin */
+  line-height: 1; /* Prevent extra spacing */
+  display: inline-block; /* Prevent block expansion */
+}
+
+
+
+.logo-img {
+  height: 35px; /* Slightly smaller */
+  margin-right: 6px;
+}
+
+
 .header {
   display: flex;
   justify-content: space-between;

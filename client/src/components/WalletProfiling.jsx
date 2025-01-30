@@ -111,12 +111,12 @@ const UserWalletProfile = () => {
       <h2>Wallet Profile</h2>
 
       <section className="user-wallet-section">
-        <h3>Input Wallet Address & Blockchain</h3>
         <input
           type="text"
           placeholder="Enter Wallet Address"
           value={walletAddress}
           onChange={handleAddressChange}
+          style={{ paddingRight: "1rem" }}
         />
         <select value={selectedChain} onChange={handleChainChange}>
           <option value="ethereum">Ethereum</option>
