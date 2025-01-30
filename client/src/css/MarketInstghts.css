@@ -1,0 +1,156 @@
+/* Market Insights Page Styles */
+
+/* Container for the entire page */
+.market-insights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--padding-large);
+    max-width: var(--max-width);
+    margin: 120px auto;
+    gap: 40px;
+    background: rgba(50, 50, 50, 0.8); /* Consistent background for the page */
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 20px var(--box-shadow);
+}
+
+/* Title and Section Styling */
+.market-insights h2 {
+    font-size: 2.5rem;
+    font-family: var(--font-family-header);
+    color: var(--primary-text-color);
+    text-align: center;
+    margin-bottom: var(--margin-large);
+    letter-spacing: 2px;
+}
+
+/* Chart Containers */
+.chart-container {
+    background: var(--card-bg-color);
+    padding: var(--padding-large);
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 20px var(--box-shadow);
+    backdrop-filter: blur(12px);
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+/* Hover effect */
+.chart-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: none; /* Remove blur effect on hover */
+}
+
+.chart-container h3 {
+    font-size: 2rem;
+    color: var(--primary-text-color);
+    margin-bottom: var(--margin-small);
+    text-transform: uppercase;
+}
+
+/* Insights Section */
+.insights,
+.trader-stats,
+.washtrade-alert,
+.holders-stats {
+    background: var(--card-bg-color);
+    border-radius: var(--border-radius);
+    padding: var(--padding-large);
+    box-shadow: 0 8px 20px var(--box-shadow);
+    backdrop-filter: blur(12px);
+    width: 100%;
+    max-width: 1000px;
+    color: var(--primary-text-color);
+    text-align: left;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.insights p,
+.trader-stats p,
+.washtrade-alert p {
+    font-size: 1.1rem;
+    margin-bottom: var(--margin-small);
+}
+
+.insights h3,
+.trader-stats h3,
+.washtrade-alert h3 {
+    font-size: 1.8rem;
+    margin-bottom: var(--margin-small);
+    color: var(--primary-text-color);
+    text-transform: uppercase;
+}
+
+/* Responsive Design for the Market Insights Page */
+@media (max-width: 768px) {
+    .market-insights {
+        padding: var(--padding-small);
+    }
+
+    .chart-container,
+    .insights,
+    .trader-stats,
+    .washtrade-alert {
+        width: 100%;
+        margin-bottom: var(--margin-small);
+    }
+
+    .chart-container h3 {
+        font-size: 1.6rem;
+    }
+
+    .insights h3,
+    .trader-stats h3,
+    .washtrade-alert h3 {
+        font-size: 1.6rem;
+    }
+
+    .insights p,
+    .trader-stats p,
+    .washtrade-alert p {
+        font-size: 1rem;
+    }
+
+    .market-insights h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Add smooth hover effect for charts */
+.chart-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Add Tooltip Styling for better readability */
+.chartjs-tooltip {
+    background: rgba(0, 0, 0, 0.8);
+    color: var(--primary-text-color);
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+/* Buttons in charts (if applicable) */
+.chart-container button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: var(--primary-text-color);
+    background: var(--button-bg-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.chart-container button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.chart-container button:active {
+    transform: scale(0.95);
+}

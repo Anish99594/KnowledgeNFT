@@ -1,0 +1,147 @@
+/* User Wallet Profile - Enhanced Styles */
+
+.user-wallet-profile {
+  background: var(--card-bg-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 20px var(--box-shadow);
+  padding: var(--padding-large);
+  margin: var(--margin-large) auto;
+  max-width: var(--max-width);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--primary-text-color);
+}
+
+.user-wallet-profile h2 {
+  font-size: 2rem;
+  color: white; /* Changed from var(--accent-color) */
+  margin-bottom: var(--margin-large);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.user-wallet-profile .user-wallet-section {
+  margin-bottom: var(--margin-large);
+  padding: var(--padding-small);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 10px var(--box-shadow);
+}
+
+.user-wallet-profile .user-wallet-section h3 {
+  font-size: 1.5rem;
+  color: white; /* Changed from var(--accent-color) */
+  margin-bottom: var(--margin-small);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.user-wallet-profile input,
+.user-wallet-profile select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: var(--margin-small);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--primary-text-color);
+  box-shadow: 0 4px 10px var(--box-shadow);
+  transition: box-shadow var(--transition-speed), background var(--transition-speed);
+}
+
+.user-wallet-profile input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.user-wallet-profile input:focus,
+.user-wallet-profile select:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.user-wallet-profile button {
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  color: var(--primary-text-color);
+  background: linear-gradient(135deg, #444444, #666666);
+  border: none; /* Changed from var(--button-bg-color) */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+  width: 100%;
+  margin-bottom: var(--margin-small);
+}
+
+.user-wallet-profile button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.user-wallet-profile button:active {
+  transform: scale(0.95);
+}
+
+.user-wallet-profile .user-wallet-performance {
+  margin-top: var(--margin-large);
+  width: 80%; /* Adjust the width of the chart container */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.user-wallet-profile .user-wallet-performance canvas {
+  width: 100% !important; /* Ensure the canvas uses the full width of its parent container */
+  height: auto !important; /* Maintain aspect ratio */
+}
+
+/* Optional: Add max width to chart */
+.user-wallet-profile .user-wallet-performance {
+  max-width: 600px; /* Set a max width for the chart */
+}
+
+.user-wallet-profile .wallet-data-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--margin-small);
+}
+
+.user-wallet-profile .wallet-data-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: var(--padding-small);
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+
+
+
+.user-wallet-profile .wallet-data-item p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-wallet-profile h2 {
+    font-size: 1.8rem;
+  }
+
+  .user-wallet-profile .user-wallet-section h3 {
+    font-size: 1.3rem;
+  }
+
+  .user-wallet-profile input,
+  .user-wallet-profile select,
+  .user-wallet-profile button {
+    font-size: 0.9rem;
+  }
+
+  .user-wallet-profile p {
+    font-size: 0.9rem;
+  }
+
+  .user-wallet-profile .wallet-data-grid {
+    grid-template-columns: 1fr;
+  }
+}
