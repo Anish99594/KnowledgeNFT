@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-![Front Page](/Users/anish/Documents/nftPortfolioTracker/client/src/assets/knowledgeNFTfrontpage.png)
+![Front Page](client/src/assets/knowledgeNFTfrontpage.png)
 
 **KnowledgeNFT** is a decentralized marketplace built on Ethereum Sepolia, designed to tokenize and trade educational resources as NFTs. This platform enables creators to mint educational materials such as courses, eBooks, and tutorials as NFTs. Buyers and sellers can interact seamlessly in a secure marketplace, benefiting from detailed analytics, insights, and profile management features.
 
